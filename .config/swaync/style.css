@@ -1,0 +1,194 @@
+* {
+  font-family: "MesloLGS NF";
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.control-center {
+  background: rgba(10, 5, 0, 0.6);
+  border-left: 2px solid rgba(255, 140, 50, 0.4);
+  border-radius: 14px;
+  padding: 8px;
+  color: #FFE0A0;
+}
+
+/* Tarjetas */
+.widget-title,
+.widget-dnd,
+.widget-buttons-grid,
+.widget-volume,
+.widget-backlight,
+.notification-row {
+  background: rgba(35, 18, 0, 0.6);
+  border: 1px solid rgba(255, 140, 50, 0.3);
+  border-radius: 12px;
+  margin: 5px 2px;
+  padding: 10px 12px;
+}
+
+/* Título */
+.widget-title > label {
+  color: #FFD580;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.widget-title > button {
+  background: rgba(255, 70, 0, 0.2);
+  border: 1px solid rgba(255, 100, 30, 0.4);
+  border-radius: 10px;
+  color: #FFE0A0;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.widget-title > button:hover {
+  background: rgba(255, 70, 0, 0.45);
+}
+
+/* Buttons grid */
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: rgba(255, 140, 50, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 140, 50, 0.25);
+  color: #FFB347;
+  padding: 3px;
+  margin: 3px;
+  font-size: 14px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: rgba(255, 140, 50, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 140, 50, 0.25);
+  color: #FFB347;
+  padding: 8px;
+  margin: 4px;
+  font-size: 18px;
+  min-width: 42px;
+  min-height: 42px;
+}
+
+/* Volume */
+.widget-volume > box > label {
+  color: #FFB347;
+  font-size: 16px;
+  min-width: 24px;
+}
+
+.widget-volume scale trough {
+  background: rgba(255, 140, 50, 0.12);
+  border-radius: 10px;
+  min-height: 5px;
+}
+
+.widget-volume scale highlight {
+  background: linear-gradient(to right, #FF6B00, #FFD580);
+  border-radius: 10px;
+}
+
+.widget-volume scale slider {
+  background: #FFD580;
+  border-radius: 50%;
+  min-width: 14px;
+  min-height: 14px;
+  border: 2px solid #FF8C42;
+}
+
+/* Backlight */
+.widget-backlight > box > label {
+  color: #FFB347;
+  font-size: 16px;
+  min-width: 24px;
+}
+
+.widget-backlight scale trough {
+  background: rgba(255, 200, 80, 0.12);
+  border-radius: 10px;
+  min-height: 5px;
+}
+
+.widget-backlight scale highlight {
+  background: linear-gradient(to right, #FFB347, #FFE8A0);
+  border-radius: 10px;
+}
+
+.widget-backlight scale slider {
+  background: #FFE0A0;
+  border-radius: 50%;
+  min-width: 14px;
+  min-height: 14px;
+  border: 2px solid #FFD580;
+}
+
+/* Notificaciones encerradas */
+.control-center-list {
+  background: rgba(35, 18, 0, 0.6);
+  border: 1px solid rgba(255, 140, 50, 0.3);
+  border-radius: 12px;
+  margin: 5px 2px;
+  padding: 6px;
+}
+
+.notification-row {
+  outline: none;
+  background: transparent;
+  border: none;
+  margin: 3px 0;
+}
+
+.notification-default-action {
+  background: transparent;
+  border-radius: 10px;
+  color: #FFE0A0;
+}
+
+.notification-default-action:hover {
+  background: rgba(255, 140, 50, 0.12);
+}
+
+.close-button {
+  background: rgba(255, 70, 0, 0.2);
+  border: none;
+  border-radius: 50%;
+  color: #FFE0A0;
+  min-width: 22px;
+  min-height: 22px;
+}
+
+.close-button:hover {
+  background: rgba(255, 70, 0, 0.5);
+}
+
+.summary {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFD580;
+}
+
+.body {
+  font-size: 12px;
+  color: #FFE0A0;
+}
+
+.app-name {
+  font-size: 11px;
+  color: #FFB347;
+}
+
+.time {
+  font-size: 11px;
+  color: rgba(255, 180, 80, 0.5);
+}
+
+/* Mpris con borde */
+.widget-mpris {
+  background: rgba(35, 18, 0, 0.6);
+  border: 1px solid rgba(255, 140, 50, 0.3);
+  border-radius: 12px;
+  margin: 5px 2px;
+  padding: 10px 12px;
+}
+

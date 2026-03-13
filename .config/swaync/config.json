@@ -1,0 +1,98 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-margin-top": 8,
+  "control-center-margin-bottom": 8,
+  "control-center-margin-right": 8,
+  "control-center-margin-left": 0,
+  "control-center-width": 380,
+  "control-center-height": -1,
+  "fit-to-screen": true,
+  "layer-shell": true,
+  "layer": "overlay",
+  "control-center-layer": "overlay",
+  "timeout": 5,
+  "timeout-low": 3,
+  "timeout-critical": 0,
+  "notification-window-width": 350,
+  "keyboard-shortcuts": true,
+  "transition-time": 200,
+  "hide-on-clear": true,
+  "hide-on-action": true,
+  "widgets": [
+    "title",
+    "notifications",
+    "buttons-grid",
+    "mpris",
+    "volume",
+    "backlight",
+    "buttons-grid#power"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Centro de control",
+      "clear-all-button": true,
+      "button-text": "󰆴 Limpiar"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰤨",
+          "command": "networkmanager_dmenu",
+          "tooltip": "Red"
+        },
+        {
+          "label": "󰂯",
+          "command": "blueman-manager",
+          "tooltip": "Bluetooth"
+        },
+        {
+          "label": "󰕾",
+          "command": "pavucontrol",
+          "tooltip": "Audio"
+        },
+        {
+          "label": "󰃠",
+          "command": "brightnessctl set 100%",
+          "tooltip": "Brillo máximo"
+        }
+      ]
+    },
+    "volume": {
+      "label": "󰕾"
+    },
+    "backlight": {
+      "label": "󰃠"
+    },
+    "mpris": {
+      "autohide": true,
+      "image-size": 96,
+      "image-radius": 10
+    },
+    "buttons-grid#power": {
+      "actions": [
+        {
+          "label": "󰌾",
+          "command": "hyprlock",
+          "tooltip": "Bloquear"
+        },
+        {
+          "label": "󰤄",
+          "command": "systemctl suspend",
+          "tooltip": "Suspender"
+        },
+        {
+          "label": "󰜉",
+          "command": "reboot",
+          "tooltip": "Reiniciar"
+        },
+        {
+          "label": "󰐥",
+          "command": "shutdown now",
+          "tooltip": "Apagar"
+        }
+      ]
+    }
+  }
+}

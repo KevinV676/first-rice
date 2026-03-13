@@ -1,0 +1,96 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 35,
+  "spacing": 4,
+  "margin-top": 6,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": [
+    "custom/arch",
+    "hyprland/workspaces",
+    "custom/cava"
+  ],
+  "modules-center": [
+    "mpris"
+  ],
+  "modules-right": [
+    "network",
+    "pulseaudio",
+    "cpu",
+    "memory",
+    "battery",
+    "clock",
+    "custom/swaync"
+  ],
+  "custom/arch": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "rofi -show drun"
+  },
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "custom/cava": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/cava.sh"
+  },
+  "mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "format-paused": " {title} - {artist}",
+    "player-icons": {
+      "default": "",
+      "spotify": ""
+    },
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "max-length": 40
+  },
+  "network": {
+    "format-wifi": "󰤨 {essid}",
+    "format-disconnected": "󰤭 desconectado",
+    "tooltip-format": "{ipaddr}"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 mute",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 2
+  },
+  "memory": {
+    "format": "󰾆 {percentage}%",
+    "interval": 2
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "󰂄 {capacity}%"
+  },
+  "clock": {
+    "format": " {:%H:%M   %d/%m/%Y}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>"
+  },
+  "custom/swaync": {
+    "format": "󰂚",
+    "exec": "echo test",
+    "on-click": "swaync-client -t",
+    "interval": 5,
+    "tooltip": false
+}
+}

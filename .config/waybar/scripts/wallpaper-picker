@@ -1,0 +1,8 @@
+#!/bin/zsh
+WALLPAPER_DIR="$HOME/wallpapers"
+
+selected=$(ls "$WALLPAPER_DIR" | rofi -dmenu -p "Wallpaper" -i)
+
+if [ -n "$selected" ]; then
+    swww img "$WALLPAPER_DIR/$selected" --transition-type wipe --transition-duration 1
+fi
